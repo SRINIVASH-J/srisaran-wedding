@@ -113,8 +113,9 @@ body{
 .overlay h1{
     font-family:'Cinzel',serif;
     color:purple;
-    font-size:62px;
+    font-size: clamp(36px, 8vw, 62px);
     text-align: center;
+    word-break: break-word;
 }
 
 .and{
