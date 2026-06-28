@@ -47,7 +47,7 @@ body{
 }
 
 .intro-box h1{
-    font-family:'Alex brush',serif;
+    font-family:'Alex Brush',serif;
     color:purple;
     margin-bottom:10px;
 }
@@ -110,12 +110,28 @@ body{
     max-width:700px;
 }
 
-.overlay h1{
-    font-family:'Cinzel',serif;
+/* Couple Names */
+
+.couple-name{
+    font-family:'Alex Brush', cursive;
+    font-size:70px;
     color:purple;
-    font-size: clamp(36px, 8vw, 62px);
-    text-align: center;
-    word-break: break-word;
+    font-weight:400;
+    line-height:1.1;
+}
+
+.and{
+    font-size:35px;
+    color:#c9a227;
+    margin:15px 0;
+}
+
+.invite{
+    color:purple;
+    margin-top:25px;
+    line-height:1.9;
+    font-size:18px;
+    font-family:'Poppins', sans-serif;
 }
 
 .and{
@@ -139,7 +155,7 @@ section{
 }
 
 section h2{
-    font-family:'Cinzel',serif;
+    font-family:'Alex brush',serif;
     font-size:36px;
     color:#7c4d92;
     margin-bottom:35px;
