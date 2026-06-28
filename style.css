@@ -1,0 +1,225 @@
+/* ---------------------------
+   Tamil Nadu Wedding Theme
+----------------------------*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8f1fa;
+    color:#cf09c2;
+    overflow-x:hidden;
+}
+
+/* ================= INTRO SCREEN ================= */
+
+#intro-screen{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+               url("images/background.jpg") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+    text-align:center;
+    transition:1s ease;
+}
+
+.intro-box{
+    background:ivory;
+    padding:40px;
+    border-radius:20px;
+    border:2px solid gold;
+    width:90%;
+    max-width:600px;
+}
+
+.intro-box h1{
+    font-family:'Cinzel',serif;
+    color:purple;
+    margin-bottom:10px;
+}
+
+.intro-box p{
+    margin-bottom:20px;
+    color:#6d467f;
+}
+
+#enter-btn{
+    padding:12px 30px;
+    border:none;
+    background:#8d63a7;
+    color:white;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+#enter-btn:hover{
+    background:#6d467f;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(244, 2, 244, 0.45),rgba(138, 83, 134, 0.45)),
+    url("images/background.jpg") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+}
+
+.hero::before,
+.hero::after{
+    content:"❀ ❀ ❀ ❀ ❀ ❀ ❀";
+    position:absolute;
+    width:100%;
+    left:0;
+    text-align:center;
+    color:#f9d56e;
+    font-size:32px;
+    letter-spacing:12px;
+}
+
+.hero::before{ top:20px; }
+.hero::after{ bottom:20px; }
+
+.overlay{
+    background:ivory;
+    backdrop-filter:blur(8px);
+    padding:50px;
+    border-radius:25px;
+    border:2px solid rgba(255,215,0,.4);
+    width:90%;
+    max-width:700px;
+}
+
+.overlay h1{
+    font-family:'Cinzel',serif;
+    color:purple;
+    font-size:62px;
+}
+
+.and{
+    font-size:35px;
+    color:#c9a227;
+    margin:15px 0;
+}
+
+.invite{
+    color:purple;
+    margin-top:25px;
+    line-height:1.9;
+    font-size:18px;
+}
+
+/* ================= SECTIONS (UNCHANGED) ================= */
+
+section{
+    padding:80px 10%;
+    text-align:center;
+}
+
+section h2{
+    font-family:'Cinzel',serif;
+    font-size:36px;
+    color:#7c4d92;
+    margin-bottom:35px;
+}
+
+.details{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+.card{
+    width:340px;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h1{
+    margin:15px 0;
+    color:#b06ab3;
+}
+
+.card button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    background:#8d63a7;
+    color:white;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+.card button:hover{
+    background:#6d467f;
+}
+
+.parent-box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:35px;
+}
+
+.parent-box div{
+    width:320px;
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+#timer{
+    font-size:40px;
+    color:#8a3ea4;
+    font-weight:bold;
+}
+
+footer{
+    background:#6d467f;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* Floating Flowers */
+
+.flowers{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    pointer-events:none;
+    background-image:url("images/petals.png");
+    background-size:120px;
+    opacity:.08;
+}
